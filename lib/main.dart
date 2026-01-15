@@ -108,7 +108,9 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
                     foregroundColor: Colors.white,
                     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(0)),
                   ),
-                  onPressed: () {},
+                  onPressed: () {
+                    _controller.forward(from: 0);
+                  },
                   child: const Text('Get Started', style: TextStyle(fontSize: 20)),
                 ),
               ),
